@@ -2,8 +2,6 @@ package com.pluralsight;
 
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         // Create a payroll calculator
@@ -31,7 +29,7 @@ public class Main {
         // Bonus: How would you apply the overtime rate?
 
         if (hoursWorked > 40) {
-            double overTimeHours = hoursWorked - 40;
+            double overTimeHours = hoursWorked - 40; // Separating the amount of overtime hours worked
             double overTimeRate = payRate * 1.5;
             double overTimePay = overTimeHours * overTimeRate;
             System.out.printf("%s's overtime pay is: $%.2f%n", userName, overTimePay);
